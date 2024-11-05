@@ -13,7 +13,7 @@ const uri =
   "mongodb+srv://arbaz957:arbaz4dev@cluster0.shesi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(uri);
 
-app.get("/api/products", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     await client.connect();
     const database = client.db("ArbazDev");
